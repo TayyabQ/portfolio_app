@@ -1,11 +1,17 @@
+import Animation1 from '@/components/animations/animation1'
+import Animation2 from '@/components/animations/animation2'
+
 import React from 'react'
 
 const Services = () => {
   return (
     <div className='mt-12 lg:mt-20 mb-6 lg:mb-20 bg-white flex flex-col items-start justify-center gap-2 lg:gap-8 px-4 min-lg:px-25 min-lg:py-4'>
+      <Animation1>
       <h1 className='text-gray-800 text-md lg:text-xs font-semibold'>My Skills</h1>
       <h1 className='text-gray-800 font-semibold text-4xl lg:text-5xl'>My Expertise</h1>
+      </Animation1>
       <div className='w-full'>
+        <Animation2>
       <div className='grid grid-cols-1 min-md:grid-cols-2 min-lg:grid-cols-4 min-lg:flex-row justify-center items-center lg:items-start my-8 gap-8'>
         <div className='bg-blue-50 p-6 rounded-lg hover:border-b-3 hover:border-blue-700'>
             <img src={"code.svg"} alt='icon' className='h-8 w-8 mb-6'></img>
@@ -28,6 +34,7 @@ const Services = () => {
             <p className='text-lg text-gray-800'>Need Automation in your system, just reach out to me!</p>
         </div>
       </div>
+      </Animation2>
       </div>
     </div>
   )

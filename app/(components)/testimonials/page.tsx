@@ -1,12 +1,18 @@
+import Animation1 from '@/components/animations/animation1'
+import Animation2 from '@/components/animations/animation2'
+
 import React from 'react'
 import { FaStar } from 'react-icons/fa';
 
 const Testimonials = () => {
   return (
     <div className='mt-12 py-4 pt-8 lg:mt-8 mb-6 lg:mb-20 bg-blue-50 flex flex-col items-start justify-center gap-2 lg:gap-8 px-4 min-lg:px-25 min-lg:py-20'>
+        <Animation1>
       <h1 className='text-gray-800 text-md lg:text-xs font-semibold'>Client's Feedback</h1>
       <h1 className='text-gray-800 font-semibold text-4xl lg:text-5xl'>Customer Testimonials</h1>
+      </Animation1>
       <div className='w-full'>
+        <Animation2>
       <div className='grid grid-cols-1 min-md:grid-cols-2 min-lg:grid-cols-3 min-lg:flex-row justify-center items-center lg:items-start my-8 gap-8'>
         <div className='flex flex-col bg-blue-50 p-6 rounded-lg border-1 border-gray-800 hover:border-blue-700'>
             <div className='flex flex-row items-center justify-start gap-1 pb-4'>
@@ -60,6 +66,7 @@ const Testimonials = () => {
             </div>
         </div>
       </div>
+      </Animation2>
       </div>
     </div>
   )

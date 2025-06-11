@@ -1,11 +1,19 @@
+import Animation1 from '@/components/animations/animation1'
+import Animation2 from '@/components/animations/animation2'
+
 import React from 'react'
 
 const Portfolio = () => {
   return (
     <div className='mt-12 lg:mt-20 bg-white flex flex-col items-start justify-center gap-2 lg:gap-8 px-4 min-lg:px-25 min-lg:py-4'>
+        <Animation1>
       <h1 className='text-gray-800 text-md lg:text-xs font-semibold'>Recent Projects</h1>
+      </Animation1>
       <div className='lg:w-full flex flex-col lg:flex-row justify-between'>
+        <Animation1>
         <h1 className='text-gray-800 font-semibold text-4xl lg:text-5xl mb-8'>My Portfolio</h1>
+        </Animation1>
+        <Animation1>
         <a
           href='https://www.linkedin.com/in/tayyab-qaisar-958055254/'
           className='flex items-center justify-center bg-blue-500 text-md px-6 py-3 h-12 rounded-sm text-white font-medium'
@@ -14,7 +22,9 @@ const Portfolio = () => {
         >
             Visit My LinkedIn
         </a>
+        </Animation1>
       </div>
+      <Animation2>
       <div className='grid grid-cols-1 min-md:grid-cols-2 min-lg:grid-cols-3 min-lg:flex-row justify-center items-center my-12 gap-8'>
         <div className='rounded-lg shadow-lg'>
             <div>
@@ -53,6 +63,7 @@ const Portfolio = () => {
             </div>
         </div>
       </div>
+      </Animation2>
     </div>
   )
 }

@@ -17,14 +17,12 @@ const Footer = () => {
             <FaCode className='h-6 w-6 text-blue-900' />
         </div>
 
-        {/* Desktop menu */}
-        <div className='flex flex-col lg:flex-row gap-2 lg:gap-8'>
+        <div className='flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-8'>
             <Link className='text-gray-700' href='/services'>Services</Link>
             <Link className='text-gray-700' href='/portfolio'>Portfolio</Link>
             <Link className='text-gray-700' href='/testimonials'>Testimonials</Link>
         </div>
 
-        {/* Contact button */}
         <div className='block'>
             <a href="https://www.linkedin.com/in/tayyab-qaisar-958055254/" target="_blank" rel="noopener noreferrer" className='text-gray-800 font-semibold'><FaLinkedin className='w-6 h-6'/></a>
         </div>
