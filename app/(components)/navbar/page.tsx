@@ -8,12 +8,10 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className='w-full bg-white fixed top-0 left-0 shadow-md z-50 px-6 lg:px-12 py-3 flex justify-between items-center'>
+    <div className='w-full bg-white overlay sticky top-0 left-0 shadow-md z-50 px-6 lg:px-12 py-3 flex justify-between items-center h-[5.625rem]'>
 
       <Link className='flex items-center gap-2' href='/'>
-        <FaCode className='h-6 w-6 text-blue-500' />
-        <h1 className='text-blue-700 font-semibold text-xl' >Tayyab</h1>
-        <FaCode className='h-6 w-6 text-blue-900' />
+        <img src={"code (2).png"} alt='icon' className='h-16 w-16'></img>
       </Link>
 
       <div className='hidden lg:flex gap-8'>
@@ -23,7 +21,7 @@ const Navbar = () => {
       </div>
 
       <div className='hidden lg:block'>
-        <Link className='bg-blue-700 px-4 py-2 rounded-sm lg:text-sm text-white font-medium' href='#contact'>
+        <Link className='bg-blue-700 px-5 py-2 rounded-sm lg:text-md text-white font-medium' href='#contact'>
           Contact
         </Link>
       </div>
@@ -33,15 +31,15 @@ const Navbar = () => {
             Contact
         </Link>
         <button onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <FaTimes className='h-7 w-7' /> : <FaBars className='h-7 w-7' />}
+          {menuOpen ? <FaTimes className='h-7 w-7 text-black' /> : <FaBars className='h-7 w-7 text-black' />}
         </button>
       </div>
 
       {menuOpen && (
-        <div className='absolute top-full right-0 mt-2 bg-white shadow-lg w-48 p-4 flex flex-col gap-3 lg:hidden'>
-          <Link className='text-gray-700 text-left' href='#services'>Services</Link>
-        <Link className='text-gray-700 text-left' href='#portfolio'>Portfolio</Link>
-        <Link className='text-gray-700 text-left' href='#testimonials'>Testimonials</Link>
+        <div className='absolute top-full left-1/2 -translate-x-1/2 bg-white shadow-lg w-48 p-4 flex flex-col gap-3 lg:hidden justify-center items-center'>
+          <Link className='text-gray-700 text-left text-[18px]' href='#services'>Services</Link>
+        <Link className='text-gray-700 text-left text-[18px]' href='#portfolio'>Portfolio</Link>
+        <Link className='text-gray-700 text-left text-[18px]' href='#testimonials'>Testimonials</Link>
         </div>
       )}
     </div>

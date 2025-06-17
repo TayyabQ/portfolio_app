@@ -9,8 +9,8 @@ const Footer = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className='w-full'>
-        <div className='bg-blue-50 px-6 lg:px-12 py-16 gap-8 lg:gap-0 shadow-md flex flex-col lg:flex-row justify-between items-center'>
+    <div className='w-full px-10 py-18 lg:px-16 lg:py-20 bg-blue-50'>
+        <div className='px-6 lg:px-12 pb-16 gap-8 lg:gap-0 flex flex-col lg:flex-row justify-between items-center'>
         <div className='flex items-center gap-2'>
             <FaCode className='h-6 w-6 text-blue-500' />
             <Link className='text-blue-700 font-semibold text-xl' href='/'>Tayyab</Link>
@@ -31,8 +31,8 @@ const Footer = () => {
     <div className='bg-gray-800 h-0.5 px-6 lg:px-12'>
 
     </div>
-    <div className='bg-blue-50 px-6 lg:px-12 pt-6 pb-16 shadow-md flex flex-row justify-center items-center'>
-       <h1 className='font-normal text-md'>Made by Tayyab Qaisar</h1>
+    <div className='bg-blue-50 px-6 lg:px-12 pt-6 pb-16 lg:pb-0 flex flex-row justify-center items-center'>
+       <h1 className='font-normal text-black text-[14px]'>Made by Tayyab Qaisar</h1>
     </div>
 </div>
   );

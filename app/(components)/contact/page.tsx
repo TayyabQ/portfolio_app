@@ -39,67 +39,68 @@ const Contact = () => {
     }
 
   return (
-    <div className='mt-12 py-4 pt-8 mb-6 lg:mb-20 flex flex-col items-center justify-center gap-2 lg:gap-8 px-4 min-lg:px-25 min-lg:py-0'>
+    <div className='min-lg:px-16 px-10 flex flex-row items-center justify-center'>
+        <div className='flex flex-col w-[768px] items-center justify-center gap-2 lg:gap-8 min-lg:py-25 py-24'>
         <Animation1>
-        <h1 className='text-gray-800 text-md lg:text-xs font-semibold'>Get In Touch</h1>
+        <h1 className='text-gray-800 text-[16px] font-semibold'>Get In Touch</h1>
         </Animation1>
         <Animation1>
         <h1 className='text-gray-800 font-semibold text-4xl lg:text-5xl'>Contact Me</h1>
         </Animation1>
         <Animation1>
-        <p className='text-md text-gray-800'>Have any idea in your mind, come build together!</p>
+        <p className='text-gray-800 text-[18px]'>Have any idea in your mind, come build together!</p>
         </Animation1>
-        <form className='w-4/5 flex flex-col items-start justify-center gap-6'>
+        <form className='w-full flex flex-col items-start justify-center gap-6'>
             <div className='w-full grid grid-cols-2 gap-6'>
                     <div className='grid grid-cols-1 gap-1'>
                         <Animation2>
-                        <p className='text-md text-black'>
+                        <p className='text-[16px] text-black mb-2'>
                             First name
                         </p>
                         </Animation2>
                         <Animation2>
-                        <input className='w-full border-1 border-blue-700 rounded-xs' value={firstName} onChange={e => setFirstName(e.target.value)} required/>
+                        <input className='w-full border-1 border-blue-700 rounded-xs px-2 py-3' value={firstName} onChange={e => setFirstName(e.target.value)} required/>
                         </Animation2>
                     </div>
                     <div className='grid grid-cols-1 gap-1'>
                         <Animation2>
-                        <p className='text-md text-black'>
+                        <p className='text-[16px] text-black mb-2'>
                             Last name
                         </p>
                         </Animation2>
                         <Animation2>
-                        <input className='w-full border-1 border-blue-700 rounded-xs' value={lastName} onChange={e => setLastName(e.target.value)} required/>
+                        <input className='w-full border-1 border-blue-700 rounded-xs px-2 py-3' value={lastName} onChange={e => setLastName(e.target.value)} required/>
                         </Animation2>
                     </div>
                     <div className='grid grid-cols-1 gap-1'>
                         <Animation2>
-                        <p className='text-md text-black'>
+                        <p className='text-[16px] text-black mb-2'>
                             Email
                         </p>
                         </Animation2>
                         <Animation2>
-                        <input className='w-full border-1 border-blue-700 rounded-xs' value={email} onChange={e => setEmail(e.target.value)} required type='email'/>
+                        <input className='w-full border-1 border-blue-700 rounded-xs px-2 py-3' value={email} onChange={e => setEmail(e.target.value)} required type='email'/>
                         </Animation2>
                     </div>
                     <div className='grid grid-cols-1 gap-1'>
                         <Animation2>
-                        <p className='text-md text-black'>
+                        <p className='text-[16px] text-md text-black mb-2'>
                             Phone Number
                         </p>
                         </Animation2>
                         <Animation2>
-                        <input className='w-full border-1 border-blue-700 rounded-xs' value={contact} onChange={e => setContact(e.target.value)} required type='number'/>
+                        <input className='w-full border-1 border-blue-700 rounded-xs px-2 py-3' value={contact} onChange={e => setContact(e.target.value)} required type='number'/>
                         </Animation2>
                     </div>
             </div>
             <div className='w-full grid grid-cols-1 gap-1'>
                 <Animation2>
-                <p className='text-md text-black'>
+                <p className='text-[16px] text-black mb-2'>
                     Choose a topic
                 </p>
                 </Animation2>
                 <Animation2>
-                <select value={topic} onChange={e => setTopic(e.target.value)} required className='w-full border-1 border-blue-700 rounded-xs text-sm p-2 text-gray-500'>
+                <select value={topic} onChange={e => setTopic(e.target.value)} required className='w-full border-1 border-blue-700 rounded-xs text-sm px-2 py-3 text-gray-500'>
                     <option value='' disabled>Select One...</option>
                     <option value='Order'>Be a Client</option>
                     <option value='Information'>Get Info</option>                    
@@ -108,12 +109,12 @@ const Contact = () => {
             </div>
             <div className='w-full grid grid-cols-1 gap-1'>
                 <Animation2>
-                <p className='text-md text-black'>
+                <p className='text-[16px] text-black mb-2'>
                     Message
                 </p>
                 </Animation2>
                 <Animation2>
-                <textarea placeholder='Type your message...' className='w-full border-1 border-blue-700 rounded-xs text-sm p-2 placeholder-gray-500' rows={6} value={message} onChange={e => setMessage(e.target.value)}/>
+                <textarea placeholder='Type your message...' className='w-full border-1 border-blue-700 rounded-xs text-sm p-3 placeholder-gray-500' rows={9} value={message} onChange={e => setMessage(e.target.value)}/>
                 </Animation2>
             </div>
             <div className='flex flex-row gap-1'>
@@ -123,11 +124,12 @@ const Contact = () => {
                 </p>
             </div>
             <div className='w-full flex items-center justify-center'>
-                <button className='bg-blue-700 lg:text-sm px-8 py-4 rounded-sm text-white max-lg:mt-4' onClick={handleSubmit}>
+                <button className='bg-blue-700 lg:text-sm px-8 py-3.5 rounded-sm text-white max-lg:mt-4' onClick={handleSubmit}>
                     Submit
                 </button>
             </div>
         </form>
+    </div>
     </div>
   )
 }

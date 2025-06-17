@@ -2,10 +2,11 @@ import Animation1 from '@/components/animations/animation1'
 import Animation2 from '@/components/animations/animation2'
 
 import React from 'react'
+import {FaLinkedin} from 'react-icons/fa'
 
 const Portfolio = () => {
   return (
-    <div className='mt-12 lg:mt-20 bg-white flex flex-col items-start justify-center gap-2 lg:gap-8 px-4 min-lg:px-25 min-lg:py-4'>
+    <div className='bg-white flex flex-col items-start justify-center gap-2 lg:gap-8 px-10 py-20 min-lg:px-16 min-lg:py-25'>
         <Animation1>
       <h1 className='text-gray-800 text-md lg:text-xs font-semibold'>Recent Projects</h1>
       </Animation1>
@@ -16,11 +17,12 @@ const Portfolio = () => {
         <Animation1>
         <a
           href='https://www.linkedin.com/in/tayyab-qaisar-958055254/'
-          className='flex items-center justify-center bg-blue-500 text-md px-6 py-3 h-12 rounded-sm text-white font-medium'
+          className='flex gap-3 items-center justify-center bg-blue-500 text-md px-6 py-3 h-12 rounded-sm text-white font-medium'
           target='_blank'
           rel='noopener noreferrer'
         >
-            Visit My LinkedIn
+        <FaLinkedin className='h-5 w-5 text-white'/>
+        <p>Visit My LinkedIn</p>
         </a>
         </Animation1>
       </div>
@@ -28,7 +30,7 @@ const Portfolio = () => {
       <div className='grid grid-cols-1 min-md:grid-cols-2 min-lg:grid-cols-3 min-lg:flex-row justify-center items-center my-12 gap-8'>
         <div className='rounded-lg shadow-lg'>
             <div>
-                <img src={"movie app.jpg"} alt='icon' className='w-full'></img>
+                <img src={"movie app.jpg"} alt='icon' className='h-70 w-full'></img>
             </div>
             <div className='p-6'>
                 <h1 className='text-xl font-bold text-gray-800 mb-3'>Movie App</h1>
@@ -40,7 +42,7 @@ const Portfolio = () => {
         </div>
         <div className='rounded-lg shadow-lg'>
             <div>
-                <img src={"ai app.jpg"} alt='icon' className='w-full'></img>
+                <img src={"ai.jpg"} alt='icon' className='h-70 w-full'></img>
             </div>
             <div className='p-6'>
                 <h1 className='text-xl font-bold text-gray-800 mb-3'>AI Chatbot</h1>
@@ -52,7 +54,7 @@ const Portfolio = () => {
         </div>
         <div className='rounded-lg shadow-lg'>
             <div>
-                <img src={"portfolio.jpeg"} alt='icon' className='w-full'></img>
+                <img src={"portfolioo.jpeg"} alt='icon' className='h-70 w-full'></img>
             </div>
             <div className='p-6'>
                 <h1 className='text-xl font-bold text-gray-800 mb-3'>Portfolio</h1>
