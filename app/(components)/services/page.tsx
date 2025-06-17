@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <div className='bg-white flex flex-col items-start justify-center gap-2 lg:gap-8 px-10 py-24 min-lg:px-16 min-lg:py-28'>
       <Animation1>
-      <h1 className='text-gray-800 text-md lg:text-xs font-semibold'>My Skills</h1>
+      <h1 className='text-gray-800 text-md lg:text-xs font-semibold mb-6'>My Skills</h1>
       <h1 className='text-gray-800 font-semibold text-4xl lg:text-5xl'>My Expertise</h1>
       </Animation1>
       <div className='w-full'>

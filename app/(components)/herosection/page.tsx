@@ -17,7 +17,7 @@ const HeroSection = () => {
         <p className='text-blue-950 font-semibold text-[18px]'>I am a graduate of FAST NUCES Islamabad BS-SE-2024</p>
         </Animation1>
         <Animation1>
-        <button className='bg-blue-700 lg:text-[16px] px-8 py-3.5 rounded-sm text-white max-lg:mt-8'>
+        <button className='bg-blue-700 lg:text-[16px] px-8 py-3.5 rounded-sm text-white mt-8'>
             Get In Touch
         </button>
         </Animation1>
